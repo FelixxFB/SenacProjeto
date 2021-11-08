@@ -1,6 +1,8 @@
-* { padding: 0px;
+body {
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    font-family: sans-serif;
+    background-color: violet;
 
 }
 label,input{ 
@@ -17,14 +19,16 @@ label,input{
 form{
 
     width: 330px;
-    background-color: darkgrey;
+    background-color: #E75590;
     padding: 20px;
     margin: 30px auto;
+    border-radius: 3px;
 
 }
 input[type="submit"]{
     margin-top: 10px;
     cursor: pointer;
+    
 
 
 }
@@ -33,38 +37,28 @@ input[type="submit"]{
     height: 500px;
     float: left;
     
-
-
-
 }
 #direita{
     width: 65%;
-   
     height: 500px;
     float: right;
-
-
-
 }
 table{
 
-background-color:  darkgrey;
+background-color:  #E75590;
 width: 90%;
 margin: 30px auto;
+border-radius: 3px;
 
 }
 tr{
     line-height: 30px;
-
-
 }
 tr#titulo{
     font-weight: bold;
     color: white;
-    background-color: dimgray;
-
-
-
+    background-color: #00C2CB;
+    border-radius: 3px;
 }
 td{
 
@@ -93,4 +87,16 @@ a{
 h4{
     float: left;
     height: 50px;
+}
+#sair{
+
+    background-color: #00C2CB;
+    color: white;
+    font-size: 20px;
+    border: 2px solid;
+    border-radius: 3px;
+    margin-top: 10px;
+    width: 5%;
+    height: 20px;
+    
 }

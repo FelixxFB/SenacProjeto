@@ -4,6 +4,7 @@
 /*$artista = new Artista("senacprojeto", "localhost", "root", '');
 $artitas = $artista->buscarDados();
 var_dump($artista);*/
+// exemplo de uso
 
 
 

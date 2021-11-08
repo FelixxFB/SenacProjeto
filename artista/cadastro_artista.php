@@ -2,6 +2,12 @@
 
 require_once 'artista_modelo.php';
 $a = new Artista ("senacprojeto","localhost","root","");
+session_start();
+if(!isset($_SESSION['id_usuario'])){
+  header("location: index.php");
+  exit();
+ 
+}
 
 ?>
 
@@ -12,11 +18,13 @@ $a = new Artista ("senacprojeto","localhost","root","");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css_artista.css">
+    <link rel="stylesheet" href="../CSS/css_artista.css">
     <title>Cadastro artista</title>
 </head>
 
+
 <body>
+
     <?php
     if(isset($_POST['nome'])){
 
@@ -97,8 +105,11 @@ $a = new Artista ("senacprojeto","localhost","root","");
 
                 <input type="submit" 
                 value="<?php if(isset($res)){echo "Atualizar";}else{echo"Cadastrar";}?>">
+                
             </form>
+            <a id="sair" href="sair.php">Sair</a>
             </section>
+            
 
 
             <section id="direita">
@@ -145,6 +156,7 @@ $a = new Artista ("senacprojeto","localhost","root","");
                 ?>
                 
             </section>
+           
 </body>
 </html>
 
